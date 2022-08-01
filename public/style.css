@@ -1,0 +1,395 @@
+canvas{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  color: black;
+  z-index: -10;
+}
+body{
+  overflow-x: hidden;
+  padding: 0%;
+  margin: 0%;
+  background-color: #1c1d26;
+    background-size: cover;
+    background-position: center top;
+    align-items: center;
+    text-align: center;
+    font-size: 100%;
+    font: inherit;
+      align-items: center;
+      text-align: center,justify;
+            color: #fff;    
+            font-family: 'Nunito Sans', sans-serif;  
+ 
+}
+
+/* ----------------------------SCROLL BAR-------------------------- */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e7e9f9;/*Navbar default color*/
+  border-radius: 5px;
+}
+
+.reverse, .reverse>* {
+  -moz-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+/* ------------------------------SPLINE---------------------------- */
+.spline{
+  width: 100vw;
+  height: 100vh;
+}
+
+
+#head{
+  background: #1c1d26;
+
+  /* border: red solid 2px; */
+  padding: 0%;
+  margin: 0 ;
+  height: 72.25vh;
+  width: 100vw;
+  display: inline-block;
+}
+
+/* Home page link */ 
+
+.main-page{
+  margin-top: 15%;
+  display: inline-block;
+}
+
+
+.h2p{
+  padding-top: 20%;
+  margin: 0%;
+}
+
+/* ---------------------------------ABOUT ME----------------------------------- */
+#about{
+  margin: 0 0 5% 0 ;
+}
+
+.about-heading{
+  font-size: 2rem;
+
+}
+.h1padding{
+  padding: 10px;
+}
+.about-text{
+  font-size: 1.2rem;
+}
+.about-me-text{
+  padding: 20% 30%;
+}  
+
+.me{
+    text-align: justify; 
+  }
+
+ .tech-stack-slides{
+  padding: 2rem;
+ }
+ .tech-stack-list{
+  padding: 1.5rem;
+ } 
+ /* -----------------------------------PROJECTS------------------------------- */
+#project{
+  margin-bottom: 0%;
+}
+
+#project-section{
+  margin: 0 0 5% 0 ;
+  padding-top: 10%;
+}
+
+
+.box-left{
+  margin: 4% 10%;
+  height: 15vh;
+  width: 30%;
+  padding: 10px;
+    background-color: #06283D;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
+
+}
+ 
+.box-right{
+  margin: 4% 60%;
+  height: 15vh;
+  width: 30%;
+  padding: 10px;
+  background-color: #06283D;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
+
+}
+
+
+/* ---------------------------------COMPOSE PAGE----------------------------- */
+ #compose-page{
+  margin: 0 0 5% 0 ;
+  color: #000;
+ }
+.input-box{
+  width: 40vw;
+  height: 5vh;
+  border-radius: 1%;
+
+}
+/* -----------------------------------BLOG PAGE------------------------------- */
+
+
+
+.postPalet{
+  text-align: left;
+  margin: 10%;
+  /* background-color:#06283D; */
+  display: flex;
+  flex-direction: column-reverse;
+  border: #000;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.h1b{
+  padding: 1px 20px;
+  font-size: 3rem;
+}
+
+.p1b{
+  padding: 1px 20px;
+}
+
+a{
+  margin-bottom: 50px;
+}
+/* ON HOVER LINE ANIMATION */
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 6%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 10PX;
+  background-color: rgba(255, 255, 255, 0.6);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+.date-display{
+  padding-left: 20px;
+  font-size: 1.2rem;
+}
+/* -------------------------------------POST----------------------------------- */
+
+.post-page{
+  /* background-color: #fff; */
+  width: 100vw;
+  color: #fff;
+  text-align: left;
+  margin: 4% 0 21% 0 ;
+
+  
+}
+.h1post{
+  font-size: 3rem;
+  padding: 20px;
+}
+.p1post{
+  font-size: 1.2rem;
+  padding: 20px;
+  margin-bottom: 15%;
+}
+
+ /* ------------------------------------CARD----------------------------------- */
+
+ 
+  #card{
+    margin: 7% 15%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: "Poppins";
+    color: var(--dark-color);
+    /* background-image: url("https://products.ls.graphics/mesh-gradients/images/99.-Roman.jpg");
+    background-size: cover;
+    background-position: center top; */
+  }
+  
+  strong {
+    font-weight: 700;
+  }
+  
+  .overlay {
+    width: min(100%, 1140px);
+    /*   max-height: 640px; */
+    padding: 8rem 6rem;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.375);
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+  
+  .overlay__inner {
+    max-width: 36rem;
+  }
+  
+  .overlay__title {
+    font-size: 1.875rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    margin-bottom: 2rem;
+  }
+  
+  .text-gradient {
+    background-image: linear-gradient(45deg, #ff0066, #ff1026);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .overlay__description {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
+  }
+  
+  .overlay__btn {
+    padding: 1rem 3rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--light-color);
+    background: var(--dark-color);
+    border: none;
+    border-radius: 0.5rem;
+    transition: transform 150ms ease;
+  }
+  
+  .overlay__btn:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 1140px) {
+    .overlay {
+      padding: 8rem 4rem;
+    }
+  }
+  
+  @media only screen and (max-width: 840px) {
+    body {
+      padding: 0;
+    }
+  
+    .overlay {
+      padding: 4rem;
+      height: auto;
+    }
+  
+    .overlay__title {
+      font-size: 1.25rem;
+      line-height: 2rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .overlay__description {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .overlay {
+      padding: 1.5rem;
+    }
+  
+    .overlay__btns {
+      /*     flex-wrap: wrap; */
+    }
+  
+    .overlay__btn {
+      width: 100%;
+      /*     font-size: 0.75rem; */
+    }
+
+    .box-left,.box-right{
+      margin: 0;
+      margin-bottom: 10%;
+
+      width: 100vw;
+      height: auto;
+    }
+
+    .post-page{
+      height: auto;
+
+    }
+    .postPalet{
+      margin-bottom: 20%;
+    }
+    
+    .about-me-text{
+      padding: 30% 13%;
+
+    }
+  }
+  
+
+
+/* -----------------------------------CARD END---------------------------------- */
+
+
+
+h3{
+    color: beige;
+}
+h4,p{
+    padding: 5px;
+
+}
+
+.footer{
+
+    left: 0;
+    bottom: 0;
+    width: 100%;  
+    background-color: #06283D;  
+    color: white;  
+    text-align: center;
+    height: 18vh;
+    padding: 2%;
+    margin: 0%;
+    position: relative;
+
+    
+}
+
+.fab{
+    padding: 5px;
+}

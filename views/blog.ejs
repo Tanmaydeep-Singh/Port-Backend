@@ -1,0 +1,23 @@
+<%- include("partials/navbar"); -%>
+
+
+<div class="Text">
+
+<div class="postPalet">
+  
+    <%  posts.forEach(function(post){ %>
+
+      <a data-aos="zoom-in-right" data-aos-delay="800" class='p1b hover-underline-animation' href="/posts/<%=post._id%>">Read More</a> <!--Read More link-->
+      
+     <p  data-aos="zoom-in-left" data-aos-delay="600" class='p1b'><%= post.content.substring(0,100) +" ..."%></p> <!--Truncating the content-->
+      <h1  data-aos="zoom-in-right" data-aos-delay="400"class="h1b"> <%= post.title %> <a class="date-display"><%=post.date%></a></h1>  
+        <!-- Here we have inversed the order using css, so that the latest post appears on the top. -->
+   
+  <% });  %>
+  
+    </div>
+</div>
+
+
+
+<%- include("partials/footer"); -%>
