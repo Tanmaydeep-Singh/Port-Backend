@@ -5,9 +5,8 @@ import { Loader } from 'three';
 
 const loader =  new THREE.TextureLoader()
 // Planet
-const texture  = loader.load("texture.jpg")
-const formap  = loader.load("Backgroun.jpg")
-
+const texture  = loader.load("bubbleb.png")
+const formap  = loader.load("bubble .png")
 
 // EARTH
 // const texture  = loader.load("texture.jpg")
@@ -15,7 +14,7 @@ const formap  = loader.load("Backgroun.jpg")
 
 
 const scene = new THREE.Scene()
-scene.background =loader.load('2k_stars_milky_way.jpg')
+scene.background =loader.load('color:0xffffff')
 
 
 const camera =new THREE.PerspectiveCamera( 100, window.innerWidth/window.innerHeight,1,1000)
@@ -48,9 +47,9 @@ const geometry = new THREE.SphereBufferGeometry(3.5,64,64)
 const material = new THREE.MeshStandardMaterial({
   color: 0xffffff,
   map:formap,
+  depthtest:true,
   displacementMap:texture,
-  displacementBias:0.5,
-  displacementScale:0.1, 
+  displacementScale:0.5, 
 })
 
 const sphere = new THREE.Mesh(geometry,material)
